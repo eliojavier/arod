@@ -1,10 +1,11 @@
 import {Component} from 'angular2/core';
 import {HTTPLoginService} from "../services/login.service";
+import {HTTP_PROVIDERS} from 'angular2/http';
 
 @Component({
-  templateUrl: '../../../views/templates/login.html'
-  			,
-  providers: [HTTPLoginService]  
+	selector: 'login',
+  	templateUrl: '../../../views/templates/login.html',
+  	providers: [HTTPLoginService]  
 })
 
 export class loginForm {
