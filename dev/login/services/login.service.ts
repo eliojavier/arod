@@ -10,9 +10,9 @@ export class HTTPLoginService {
 	constructor (private _http: Http) {}
 
 	postLogin(email,password) {
-		var json =JSON.stringify({ email: email, password: password});
-		console.log(json);
-		var params = json;
+//		var json =JSON.stringify({ email: email, password: password});
+//		var params = json;
+		var params = 'email=' + email + '&password=' + password;
 		var headers = new Headers();		
 		headers.append('Content-Type','application/x-www-form-urlencoded');
 		headers.append('authorization','Basic ZnJvbnRlbmQ=');		
